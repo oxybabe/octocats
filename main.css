@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+div {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.octodex img {
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: lightslategrey;
+
+  column-count: 3;
+  column-gap: 1em;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.octocat {
+  position: relative;
+  column-count: 3;
+  column-gap: 1em;
+  float: left;
+  width: 33.33%;
+  padding: 0 6px;
+  
+}
+
+.image-footer {
+    float: left;
+  width: 33.33%;
+  padding: 0 6px;
+}
+.authors img {
+    float: left;
+  width: 33.33%;
+  padding: 0 6px;
+}
