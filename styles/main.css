@@ -1,3 +1,8 @@
+:root {
+  --primary-font-family: Helvetica, arial, sans-serif;
+  --primary-gray: #cacaca;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -6,61 +11,230 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/* #main {
-  max-width: 600px;
-  margin: 0 auto;
+/* notes: */
+/* img {
+  width: 100%;
 } */
 
-.octodex img {
+/* ul {
+  list-style: none;
+  padding: 0; /*getting rid of the padding, defaults to the left */
+/* } */
+
+/* .octodex {
+  vertical-align: middle;
+} */
+
+/* .octocat {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+} */
+
+/* .octocat > a { /*selects the immediate child (> a), the anchor is the parent to the image */
+/* display: inline-block;
+  height: 100%;
+  width: 100%;
+border: solid 1px var(--primary-gray);
+border-radius: 3px;
+position: relative;
+} */
+
+/* .octocat > a::after { pseudo elements have double colons, it targets the anchor tag. after all it's children it add the pseudoelement
+  content: ''; it has to have content even if it's an empty string
+border-top: solid 10px var(--primary-gray);
+border-left: solid 10px transparent;
+border-right: solid 10px transparent;
+position: absolute; want to position this in relation to it's parent (the anchor tag above)
+top: 100%;
+right: 1%;
+
+} */
+
+/* .image-number::before {
+  content: '#';
+} */
+
+/* .image-footer {
   position: relative;
-  box-sizing: border-box;
-  border-style: solid;
-  border-color: lightgray 1px;
+border-bottom: solid 1px var(--primary-gray);
+padding-top: 15px;
+padding-bottom: 15px;
+} */
+
+/* .image-number {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.authors {
+  display: inline-block;
+}
+
+.authors > li > a {
+  display: inline-block; /*allows you to control width and height */
+/* width: 30px; */
+
+/* } */
+/*image caption is a div so it moves all to the right
+.image-caption {
+  text-align: right;
+}
+
+/*targeting the 2nd child of image-caption, the first child is the span
+.image-caption a::nth-child(2) { 
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.authors img {
+text-align: center;
+}
+
+
+  
+  
+} */
+
+img {
+  width: 100%;
+}
+.octodex {
+  vertical-align: middle;
+}
+
+.octodex img {
+  border: solid lightgray 3px;
   width: 425px;
   height: auto;
   max-width: 100%;
+  border-radius: 3px;
 }
 
 .octocat {
-  position: relative;
-  float: left;
-  width: 33.33%;
-  border-color: lightgray 1px;
-  height: auto;
-  max-width: 100%;
-
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+}
+.octocat > a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border: solid 1px var(--primary-gray);
+  border-radius: 3px;
+position: relative;
 }
 
+.octocat > a::after {
+  content: "";
+  border-top: solid 10px var(--primary-gray);
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+  position: absolute;
+  top: 100%;
+  right: 1%;
+}
+
+/* .octocat img {
+  border-color: lightgray;
+  border: solid;
+} */
 
 .image-footer {
-  border-bottom: solid;
-  height: auto;
-  max-width: 100%;
-  height: auto;
-  max-width: 100%;
+  position: relative;
+  border-bottom: solid lightgray;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .image-caption {
   /* float: left; */
-  margin-left: 225px;
+  /* margin-left: 225px; */
+  /* color: black;
+  font-weight: bold; */
+  /* height: auto;
+  max-width: 100%; */
+  text-align: right;
+}
+.image-caption a::nth-child(2) {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+.image-caption a {
   color: black;
-  font-weight: bolder;
-  height: auto;
-  max-width: 100%;
+  font-weight: bold;
+  
+}
+.image-number {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.image-number::before {
+  content: "#";
+}
+
+.authors {
+  display: inline-block;
+}
+.authors > li > a {
+  display: inline-block;
+  width: 30px;
 
 }
+
 .authors img {
+  text-align: center;
   float: right;
-  width: 30px;
+  /* width: 30px;
   position: relative;
   margin: -20px 5px 0px 0px;
   height: auto;
-  max-width: 100%;
+  max-width: 100%; */
 }
 
 .image-number {
   color: gray;
-  height: auto;
+  /* height: auto;
   max-width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: 100%; */
 }
+.image-caption {
+  text-align: right;
+}
+/* @media (max-width: 768px) {
+  body {
+    background-color: red;
+  }
+} */
+
+/* more notes using flex:
+
+.octodex {
+  display: flex;
+}
+
+.octocat {
+  flex: 1;
+  margin: auto 15px;
+}
+
+.image-footer {
+  display: flex;
+}
+
+.image-caption {
+  display: flex;
+  margin-left: auto;
+}
+
+.authors > li > a {
+  display: inline-block;
+  width: 30px;
+} */
