@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* #main {
+  max-width: 600px;
+  margin: 0 auto;
+} */
+
+.octodex img {
+  position: relative;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: lightgray 1px;
+  width: 425px;
+  height: auto;
+  max-width: 100%;
+}
+
+.octocat {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  border-color: lightgray 1px;
+  height: auto;
+  max-width: 100%;
+
+}
+
+
+.image-footer {
+  border-bottom: solid;
+  height: auto;
+  max-width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.image-caption {
+  /* float: left; */
+  margin-left: 225px;
+  color: black;
+  font-weight: bolder;
+  height: auto;
+  max-width: 100%;
+
+}
+.authors img {
+  float: right;
+  width: 30px;
+  position: relative;
+  margin: -20px 5px 0px 0px;
+  height: auto;
+  max-width: 100%;
+}
+
+.image-number {
+  color: gray;
+  height: auto;
+  max-width: 100%;
+  height: auto;
+  max-width: 100%;
+}
